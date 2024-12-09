@@ -1,0 +1,214 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Adding Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&family=Playfair+Display:wght@600&display=swap');
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    animation: slide-down 1s ease-out;
+}
+
+.header .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .nav {
+    text-align: right;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.header .nav a:hover {
+    color: #FFDD00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Playfair Display', serif;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #2E8B57;
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    animation: slide-left 1.2s ease-out;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+    text-align: center;
+    animation: slide-right 1.2s ease-out;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    animation: zoom-in 1s ease-out;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fade-in 1s ease-in-out;
+}
+
+.footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer .social-links a:hover {
+    color: #4CAF50;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
