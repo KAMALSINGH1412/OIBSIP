@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    background: linear-gradient(135deg, #FF7F50, #FFD700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Animations */
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Container */
+.container {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slide-in-bottom 1s ease-out;
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4500;
+    margin-bottom: 20px;
+    animation: slide-in-top 1.2s ease-out;
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #32CD32;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    animation: slide-in-left 1.5s ease-out;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #00CED1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #F0F8FF;
+    cursor: pointer;
+    animation: slide-in-right 1.7s ease-out;
+}
+
+/* Convert Button */
+.convert-btn {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: slide-in-left 2s ease-out;
+}
+
+.convert-btn:hover {
+    background-color: #FF6347;
+    transform: scale(1.05);
+}
+
+/* Result Container */
+.result-container {
+    margin-top: 20px;
+    animation: slide-in-top 2.2s ease-out;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00CED1;
+}
